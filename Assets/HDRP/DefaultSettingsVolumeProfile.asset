@@ -39,7 +39,7 @@ MonoBehaviour:
       m_Bits: 4294967295
   maximumSamples:
     m_OverrideState: 1
-    m_Value: 160
+    m_Value: 300
   minimumDepth:
     m_OverrideState: 0
     m_Value: 1
@@ -47,8 +47,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 4
   maximumIntensity:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 200
   denoising:
     m_OverrideState: 1
     m_Value: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f086a068d4c5889438831b3ae9afc11c, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 2
