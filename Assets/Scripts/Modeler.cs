@@ -65,7 +65,10 @@ sealed class Modeler
         r.NextUInt4();
 
         var c = (Vector4)Color.HSVToRGB(r.NextFloat(), 1, 1);
-        c.w = r.NextFloat() < 0.2f ? 0 : 0;
+        if (r.NextFloat() < 0.2f)
+            c = math.float4(0.4f, 0.8f, 1, 5);
+        else
+            c.w = 0;
 
         for (var i = 0; i < VertexCount; i++) buffer[i] = c;
     }
